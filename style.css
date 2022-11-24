@@ -203,6 +203,12 @@ header
     text-align: center;
     font-weight: bold;
 }
+.technologies p a
+{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+}
 .fa-brands
 {
     text-align: center;
