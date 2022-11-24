@@ -1,0 +1,759 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif', serif;
+}
+.grid-portfolio
+{
+    display: grid;
+    background-size: cover;
+    grid-template-columns: 100%;
+    grid-template-rows: 3% 92% 5%;
+    grid-template-areas: 
+    "header"
+    "bodyport"
+    "pie";
+}
+
+header
+{
+    grid-area: header;
+    display: flex;
+    border-bottom: 2px solid black;
+    
+}
+.Ln
+{   
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+}
+.Ln h2
+{
+    font-size:50px;
+    font-style: italic;
+    color: black;
+}
+.nav-bar-content
+{
+    display: flex;
+    width: 70%;
+    justify-content:center;
+    align-items: center;
+    
+}
+.nav-bar-content nav ul
+{
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+.nav-bar-content nav ul a
+{
+    margin: 1rem;
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+}
+.nav-bar-content nav ul a:hover
+{
+    
+}
+.body-portfolio
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: bodyport;
+    color: black;
+    
+}
+
+.about
+{
+   
+}
+.me-content
+{
+    margin-top: 300px;
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.me-caja
+{
+
+    width: 80%;
+}
+.me-content p
+{
+    width: 80%;
+    font-size: 2rem;
+    color: black;
+}
+.me-content h1
+{
+    width: 100%;
+    font-size: 5.4rem;
+    color: black;
+}
+.me-content h2
+{
+    width: 100%;
+    font-size: 5.5rem;
+    color: rgba(0, 0, 0, 0.663);
+    
+}
+.about
+{
+    display: flex;
+    width: 100%;
+    margin-bottom: 150px;
+    margin-top: 300px;
+
+}
+.about-content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about-content h2
+{
+    font-size: 50px;
+    padding: 1rem;
+    border-bottom: 4px solid white;
+    font-style: italic;
+    color: black;
+    
+}
+.about-content p
+{
+    width: 70%;
+    text-align: center;
+    margin: 1.5rem;
+    font-size: 30px;
+    color: black;
+    
+}
+.myskills
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 350px;
+}
+.myskills-content
+{
+    width: 70%;
+}
+.content-text-skills
+{
+    width: 40%;
+    margin: 2rem;
+    padding: 1rem;
+}
+.content-text-skills h2
+{
+    font-size: 40px;
+    padding: 1rem;
+    
+}
+.content-text-skills p
+{
+    font-size: 15px;
+    border-bottom: 4px solid black;
+    padding: 1rem;
+    
+}
+.flex-technologies
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+}
+.technologies
+{
+    display: flex;
+    width: 20%;
+    margin: 1rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    box-shadow: 10px 10px 8px black;
+}
+.technologies:hover
+{
+    transform: scale(1.15);
+    transition: all 2s ease;
+}
+.technologies p
+{
+    text-align: center;
+    font-weight: bold;
+}
+.fa-brands
+{
+    text-align: center;
+    font-size: 80px;
+}
+.fa-html5
+{
+    color: #E44D26;
+}
+.fa-css3-alt
+{
+    color: #2246d0;
+}
+.fa-sass
+{
+    color: #D071A0;
+}
+.fa-bootstrap
+{
+    color:#712cf9 ;
+}
+
+form
+{
+    width: 60%;
+    margin-bottom: 350px;
+}
+.col-12
+{
+    margin: 1rem;
+}
+.col-2
+{
+    text-align: center;
+}
+.col-121
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+legend{
+    margin-bottom: 50px;
+    text-align: center;
+}
+.btn-send
+{
+    
+    padding: 1rem;
+}
+
+
+
+
+.footer
+{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+    border-top-right-radius: 90%;
+    border-top-left-radius: 90%;
+    border-top: 6px solid black;
+    
+}
+.foot
+{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    
+}
+.fg1 h2{
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color:black;
+}
+
+.fg2 a 
+{
+    margin-top: 30px;
+    display: flex;
+    width: 30%;
+    color: black;
+    justify-content: center;
+    text-decoration: none;
+}
+.fg2 i
+{
+    text-align: center;
+    font-size: 40px;
+}
+
+
+@media screen and (max-width: 934px) {
+
+    .body-portfolio
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-area: bodyport;
+        color: black;
+    }
+    .me-content
+    {
+        display: flex;
+        width: 70%;
+        align-items: center;
+    }
+    .me-caja
+    {
+        width: 100%;
+    }
+    .me-content p
+    {
+        width: 80%;
+        font-size: 1.5rem;
+        color: black;
+    }
+    .me-content h1
+    {
+        width: 100%;
+        font-size: 4.2rem;
+        color: black;
+    }
+    .me-content h2
+    {
+        width: 100%;
+        font-size: 4rem;
+        color: rgba(0, 0, 0, 0.663);
+        
+    }
+    .about
+    {
+        display: flex;
+        width: 100%;
+        margin-bottom: 60px;
+        margin-top: 150px;
+    
+    }
+    .about-content
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-content h2
+    {
+        font-size: 30px;
+        padding: 1rem;
+        border-bottom: 4px solid black;
+        
+        
+    }
+    .about-content p
+    {
+        width: 70%;
+        text-align: center;
+        margin: 1.5rem;
+        font-size: 30px;
+        
+    }
+    .myskills
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    .myskills-content
+    {
+        width: 70%;
+    }
+    .content-text-skills
+    {
+        width: 40%;
+        margin: 2rem;
+        padding: 1rem;
+    }
+    .content-text-skills h2
+    {
+        font-size: 40px;
+        padding: 1rem;
+        
+    }
+    .content-text-skills p
+    {
+        font-size: 15px;
+        border-bottom: 4px solid black;
+        padding: 1rem;
+        
+    }
+    .flex-technologies
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .technologies
+    {
+        display: flex;
+        width: 40%;
+        margin: 2.5rem;
+        padding: 2.5rem;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+        box-shadow: 10px 10px 8px black;
+    }
+    .technologies:hover
+    {
+        transform: scale(1.15);
+        transition: all 2s ease;
+    }
+    .technologies p
+    {
+        text-align: center;
+        font-weight: bold;
+    }
+    .fa-brands
+    {
+        text-align: center;
+        font-size: 80px;
+    }
+    .fa-html5
+    {
+        color: #E44D26;
+    }
+    .fa-css3-alt
+    {
+        color: #2246d0;
+    }
+    .fa-sass
+    {
+        color: #D071A0;
+    }
+    .fa-bootstrap
+    {
+        color:#712cf9 ;
+    }
+    
+    form
+    {
+        width: 60%;
+        margin-bottom: 250px;
+    }
+    .col-12
+    {
+        margin: 1rem;
+    }
+    .col-2
+    {
+        text-align: center;
+    }
+    .col-121
+    {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    legend{
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .btn-send
+    {
+        
+        padding: 1rem;
+    }
+    
+    
+    
+    
+    .footer
+    {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center ;
+        border-top-right-radius: 90%;
+        border-top-left-radius: 90%;
+        border-top: 6px solid black;
+        
+    }
+    .foot
+    {
+        display: flex;
+        width: 50%;
+        align-items: center;
+        
+    }
+    .fg1 h2{
+        margin-top: 50px;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        color:white;
+    }
+    
+    .fg2 a 
+    {
+        margin-top: 30px;
+        display: flex;
+        width: 30%;
+        color: white;
+        justify-content: center;
+        text-decoration: none;
+    }
+    .fg2 i
+    {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    
+}
+@media screen and (max-width: 494px) {
+
+    .body-portfolio
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-area: bodyport;
+        color: black;
+    }
+    .me-content
+    {
+        display: flex;
+        width: 70%;
+        align-items: center;
+    }
+    .me-caja
+    {
+        width: 100%;
+    }
+    .me-content p
+    {
+        width: 80%;
+        font-size: 1rem;
+        color: black;
+    }
+    .me-content h1
+    {
+        width: 100%;
+        font-size: 3rem;
+        color: black;
+    }
+    .me-content h2
+    {
+        width: 100%;
+        font-size: 3rem;
+        color: rgba(0, 0, 0, 0.663);
+        
+    }
+    .about
+    {
+        display: flex;
+        width: 100%;
+        margin-bottom: 60px;
+        margin-top: 150px;
+    
+    }
+    .about-content
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-content h2
+    {
+        font-size: 30px;
+        padding: 1rem;
+        border-bottom: 4px solid black;
+        
+        
+    }
+    .about-content p
+    {
+        width: 70%;
+        text-align: center;
+        margin: 1.5rem;
+        font-size: 20px;
+        
+    }
+    .myskills
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    .myskills-content
+    {
+        width: 70%;
+    }
+    .content-text-skills
+    {
+        width: 40%;
+        margin: 2rem;
+        padding: 1rem;
+    }
+    .content-text-skills h2
+    {
+        font-size: 30px;
+        padding: 1rem;
+        
+    }
+    .content-text-skills p
+    {
+        font-size: 12px;
+        border-bottom: 4px solid black;
+        padding: 1rem;
+        
+    }
+    .flex-technologies
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .technologies
+    {
+        display: flex;
+        width: 70%;
+        margin: 2.5rem;
+        padding: 2.5rem;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+        box-shadow: 10px 10px 8px black;
+    }
+    .technologies:hover
+    {
+        transform: scale(1.15);
+        transition: all 2s ease;
+    }
+    .technologies p
+    {
+        text-align: center;
+        font-weight: bold;
+    }
+    .fa-brands
+    {
+        text-align: center;
+        font-size: 80px;
+    }
+    .fa-html5
+    {
+        color: #E44D26;
+    }
+    .fa-css3-alt
+    {
+        color: #2246d0;
+    }
+    .fa-sass
+    {
+        color: #D071A0;
+    }
+    .fa-bootstrap
+    {
+        color:#712cf9 ;
+    }
+    
+    form
+    {
+        width: 90%;
+        margin-bottom: 250px;
+    }
+    .col-12
+    {
+        margin: 0.5rem;
+    }
+    .col-2
+    {
+        text-align: center;
+        margin-right: 15px;
+    }
+    .col-121
+    {
+        display: flex;
+        justify-content: center;
+    }
+    legend{
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .btn-send
+    {
+        
+        padding: 0.5rem;
+        margin-left: 40px;
+    }
+    .footer
+    {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center ;
+        border-top-right-radius: 90%;
+        border-top-left-radius: 90%;
+        border-top: 6px solid black;
+        
+    }
+    .foot
+    {
+        display: flex;
+        width: 50%;
+        align-items: center;
+        
+    }
+    .fg1 h2{
+        margin-top: 50px;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        color:white;
+    }
+    
+    .fg2 a 
+    {
+        margin-top: 30px;
+        display: flex;
+        width: 30%;
+        color: white;
+        justify-content: center;
+        text-decoration: none;
+    }
+    .fg2 i
+    {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    
+}
+
+
